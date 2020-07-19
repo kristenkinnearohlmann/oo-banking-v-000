@@ -21,11 +21,7 @@ class Transfer
   end
 
   def execute_transaction
-    binding.pry
-    if @status == "complete"
-      binding.pry
-    else
-      binding.pry
+    if @status != "complete"
       @sender.balance -= @amount
       @receiver.deposit(@amount)
       @status = "complete"
