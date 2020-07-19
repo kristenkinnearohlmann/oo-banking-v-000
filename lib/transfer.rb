@@ -24,8 +24,8 @@ class Transfer
     if @status == "complete"
 
     elsif (@receiver.status == "closed" || @sender.balance - amount < 0)
-      "Transaction rejected. Please check your account balance."
       @status = "rejected"
+      "Transaction rejected. Please check your account balance."
     else
       @sender.balance -= @amount
       @receiver.deposit(@amount)
