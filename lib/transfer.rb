@@ -22,7 +22,7 @@ class Transfer
 
   def execute_transaction
     binding.pry
-    if (@status = "complete")
+    if @status = "complete"
       binding.pry
     else
       binding.pry
