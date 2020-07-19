@@ -23,8 +23,10 @@ class Transfer
   def execute_transaction
     binding.pry
     if @status = "complete"
+      binding.pry
       print @status
     else
+      binding.pry
       print @status
     end
   #   if @status = "complete"
